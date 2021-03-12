@@ -8,12 +8,12 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <title>Comparisons</title>
+    <title>Max Temperatures</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Latitude</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,14 +21,12 @@
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Plots
+                Dropdown
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                 <li><a class="dropdown-item" href="index.html">Home</a></li>
-                <li><a class="dropdown-item" href="max_temp.html">Max temperature</a></li>
-                <li><a class="dropdown-item" href="data.html">Humidity</a></li>
-                <li><a class="dropdown-item" href="data.html">Cloudiness</a></li>
-                <li><a class="dropdown-item" href="data.html">Wind Speed</a></li>
+                <li><a class="dropdown-item" href="visualizations.html">Plots</a></li>
+                <li><a class="dropdown-item" href="data.html">Data</a></li>
               </ul>
             </li>
           </ul>
@@ -37,24 +35,30 @@
     </nav>
   
     <div class="container">
-      <div class="row">
-        <h1><strong>Comparison: Latitude vs. X</strong></h1>
-        <hr>
-        <h6>click on any plot for in-depth analysis</h6>
-        <div class="col-md-6 text-center">
-          <h4>vs. Max Temperature</h4>
-          <a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" class="col-md-12" alt="..."></a>
-          <h4>vs. Humidity</h4>
-          <img src="Resources/assets/images/Fig2.png" class="col-md-12" alt="...">
-        </div>
-        <div class="col-md-6 text-center">
-          <h4>vs. Cloudiness </h4>
-          <img src="Resources/assets/images/Fig3.png" class="col-md-12" alt="...">
-          <h4>vs. Wind Speed</h4>
-          <img src="Resources/assets/images/Fig4.png" class="col-md-12" alt="...">
+        <div class="row">
+          <div class="col-md-8">
+            <h2><strong>Max Temperature</strong></h2>
+            <hr>
+            <img src="Resources/assets/images/Fig1.png" class="col-md-9 float-md-start mb-3 ms-md-3" alt="...">
+            <p>
+              As expected, the weather becomes significantly warmer as we approach the equator (0 Deg. Latitude). More interestingly, however, is the fact the the southern hemisphere seems to be warmer this time of year than the northern hemisphere.  This may be due to the tilt of the earth at the time of the year this data was gathered
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h2><strong>Visualizations</strong></h2>
+            <hr>
+            <div class="col">
+              <img src="Resources/assets/images/Fig1.png" class="col-md-6 float-start" alt="...">
+              <img src="Resources/assets/images/Fig2.png" class="col-md-6 float-center" alt="...">
+            </div>
+            <div class="col">
+              <img src="Resources/assets/images/Fig3.png" class="col-md-6 float-start" alt="...">
+              <img src="Resources/assets/images/Fig4.png" class="col-md-6 float-center" alt="...">
+            </div>
+          </div>
+            
         </div>
       </div>
-    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
