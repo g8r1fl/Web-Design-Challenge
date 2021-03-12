@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="bootstrap.min.css">
     <title>Wind Speed</title>
   </head>
   <body>
@@ -17,7 +17,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavDarkDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="comparisons.html">Comparisons</a>
@@ -45,7 +45,7 @@
         <div class="row">
           <div class="col-md-8">
             <h2><strong>Wind Speed</strong></h2>
-            <hr>
+            <hr style="color:gray;background-color:gray">
             <img src="Resources/assets/images/Fig4.png" class="col-md-12 float-md-center mb-3 ms-md-3" alt="...">
             <p>
               As expected, the weather becomes significantly warmer as we approach the equator (0 Deg. Latitude). More interestingly, however, is the fact the the southern hemisphere seems to be warmer this time of year than the northern hemisphere.  This may be due to the tilt of the earth at the time of the year this data was gathered
@@ -53,15 +53,15 @@
           </div>
           <div class="col-md-4">
             <h2><strong>Visualizations</strong></h2>
-            <hr>
-            <div class="col">
-              <a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" class="col-md-6 float-start" alt="...">
-              <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="col-md-6 float-center" alt="..."></a>
-            </div>
-            <div class="col">
-              <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" class="col-md-6 float-start" alt="..."></a>
-              <a href="wind_speed.html"><img src="Resources/assets/images/Fig4.png" class="col-md-6 float-center" alt="..."></a>
-            </div>
+            <hr style="color:gray;background-color:gray">
+            <div class="d-flex justify-content-center">
+                <a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" class="col-md-12 mb-2" alt="...">
+                <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="col-md-12 mb-2" alt="..."></a>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" class="col-md-12 mb-2" alt="..."></a>
+                <a href="wind_speed.html"><img src="Resources/assets/images/Fig4.png" class="col-md-12 mb-2" alt="..."></a>
+              </div>
           </div>
             
         </div>
